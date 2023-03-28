@@ -11,6 +11,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/styles.css">
+        <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
         <div class="name">
@@ -25,6 +27,38 @@
             <h5>Canterbury,Kent</h5>
             <ul>
                 <li><b>Canterbury Christ Church University</b></li>
+                <button>Modules</button>
+                <button id="clicMe"><ul>Third year: year in industry</ul></button>
+                <div class="">
+                    <ul>1st year modules:
+                        <li>Introduction to C#</li>
+                        <li>Deployment Technologies for Computing</li>
+                        <li>Fundamentals of Computer Systems</li>
+                        <li>Application Development in C#</li>
+                        <li>Ethic, Professionalism and Employability in Computing</li>
+                        <li>Software Lifecycle Group Development Project</li>
+                    </ul>
+                    <ul>2nd year modules:
+                        <li>Using Technology for Business Process Improvement</li>
+                        <li>Research Methods</li>
+                        <li>Database Enhancement Group Project</li>
+                        <li>Helping Users and the ITIL Framework</li>
+                        <li>Network and Operating Systems</li>
+                        <li>E-Business Systems</li>
+                    </ul>
+                    <div tabindex="-1" id="industryYear">Industry Placement</div>
+                        
+                    <!-- TODO CLICK TO take to experiences -->
+                    <ul>4th year modules:
+                        <li>Individual Study - Part A</li>
+                        <li>Advanced Networking</li>
+                        <li>Cybersecurity</li>
+                        <li>Individual Study - Part B</li>
+                        <li>Human Computer Interaction</li>
+                        <li>Current Issues in Computing</li>
+                        <li>Advanced Databases and Big Data</li>
+                        </li>
+                    </ul>
             </ul>
             <h3>2020 - 2022</h3>
             <h5>Dartford, Kent</h5>
@@ -58,7 +92,7 @@
                 <li><b>St Mary Magdalene Academy</b></li>
                 <button>Grades</button>
                 <div class="popup">
-                    <ul>
+                    <ul>Grades
                         <li>English Language: 5</li></li>
                         <li>English Literature: 4</li>
                         <li>Maths: 5</li>
@@ -74,48 +108,68 @@
         <div id="experience">
             <h2>Work Experience</h2>
             <div class="job">
+                <h3>2022 - Present</h3>
+                <button><p>Wetherspoons - Kitchen Associate</p></button>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19964.667145913998!2d1.0406490791015732!3d51.281987300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47decbb686502463%3A0xa582bf72c392e0eb!2sThe%20West%20Gate%20Inn%20-%20JD%20Wetherspoon!5e0!3m2!1sen!2suk!4v1679995090847!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="popup">
+                    <ul>
+                        <li>Prepping food for the rest of the day</li>
+                        <li>Cooking food of a wide variety</li>
+                        <li>Cleaning up the kitchen regularly</li>
+                        <li>Cleaning all parts of the kitchen when closing</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="job">
                 <h3>2021- 2022</h3>
-                <p>The New Dartford Sports Bar - Bartender</p>
+                <button><p>The New Dartford Sports Bar - Bartender</p></button>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.731199077017!2d0.21127263095167337!3d51.44473021445496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8b105c37ac33d%3A0xfdf69f0f9e51b0ec!2sThe%20Dartford%20Sports%20Bar!5e0!3m2!1sen!2suk!4v1679995200381!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="job">
                 <h3>2021 - 2021</h3>
-                <p>Wig & Gown - Bartender</p>
-                <ul>
-                    <!-- TODO Make it better or remove -->
-                    <li>Pouring pints</li>
-                    <li>Stocking drinks</li>
-                    <li>Cleaning glasses & Bar mats</li>
-                    <li>Glass runs</li>
-                </ul>
-            </div> 
+                <button><p>Wig & Gown - Bartender</p></button>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158970.5898973909!2d-0.11693012675476369!3d51.49641871949927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8b1c84e2e2bcd%3A0x73ba5ec33ace9f5!2sWig%20%26%20Gown!5e0!3m2!1sen!2suk!4v1679995177754!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="popup">
+                    <ul>
+                        <!-- TODO Make it better or remove -->
+                        <li>Pouring pints</li>
+                        <li>Stocking drinks</li>
+                        <li>Cleaning glasses & Bar mats</li>
+                        <li>Glass runs</li>
+                    </ul>
+                </div>
+            </div>
             <div class="job">
                 <h3>2020 - 2021</h3>
-                <p>McDonald's - Employee</p>
-                <ul>
-                    <li>Frequently being given the responsibility
-                        of running the kitchen which includes:
-                        Making sure breaks are run in the right
-                        order, keeping stock levels up to required
-                        amount, making sure everybody knows what
-                        station they are working, keeping
-                        enthusiasm up as this is McDonald's we're
-                        talking about.</li>
-                    <li>Working all stations on FOH (Drive-thru,
-                        payment window, drinks, delivery orders,
-                        etc).
-                    </li>
-                    <li>Working at all stations in the kitchen
-                        (cooking meat, chicken, racking fries,
-                        initiating, dressing and
-                        finishing burgers).
+                <button><p>McDonald's - Employee</p></button>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2494.657438595515!2d0.18818183090196564!3d51.2990278143565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47df4d866eb2d981%3A0x988c64ed3a0e4927!2sMcDonald&#39;s!5e0!3m2!1sen!2suk!4v1679995150065!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="popup">
+                    <ul>
+                        <li>Frequently being given the responsibility
+                            of running the kitchen which includes:
+                            Making sure breaks are run in the right
+                            order, keeping stock levels up to required
+                            amount, making sure everybody knows what
+                            station they are working, keeping
+                            enthusiasm up as this is McDonald's we're
+                            talking about.</li>
+                        <li>Working all stations on FOH (Drive-thru,
+                            payment window, drinks, delivery orders,
+                            etc).
                         </li>
-                </ul>
+                        <li>Working at all stations in the kitchen
+                            (cooking meat, chicken, racking fries,
+                            initiating, dressing and
+                            finishing burgers).
+                            </li>
+                    </ul>
+                </div>
             </div> 
             <div class="job">
                 <h3>2016 - 2020</h3>
                 <p>Piebury Corner</p>
                 <h5>Islington location: Cleaner</h5>
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52578.26810967066!2d-0.1545746792173337!3d51.54441618683154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b71487488ef%3A0x19c7fd7998f3a605!2sPiebury%20Corner!5e0!3m2!1sen!2suk!4v1679963342922!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52578.26810967066!2d-0.1545746792173337!3d51.54441618683154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b71487488ef%3A0x19c7fd7998f3a605!2sPiebury%20Corner!5e0!3m2!1sen!2suk!4v1679963342922!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <button>Duties</button>
                 <div class="popup">
                     <ul>
@@ -127,7 +181,7 @@
                 </div>
                 <h5>King's cross location: Kitchen Porter</h5>
                 <p>When working in the kitchen, time management is essential. I had to divide my time well between washing up dishes and helping the chef when needed so that customers were not waiting log times for their food.</p>
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19856.181547975135!2d-0.1561823208984337!3d51.53114360000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b3ed1dc190b%3A0x5c3cbb55a2004f85!2sPiebury%20Corner!5e0!3m2!1sen!2suk!4v1679963723846!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19856.181547975135!2d-0.1561823208984337!3d51.53114360000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b3ed1dc190b%3A0x5c3cbb55a2004f85!2sPiebury%20Corner!5e0!3m2!1sen!2suk!4v1679963723846!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <button>Duties</button>
                 <div class="popup">
                     <ul>
