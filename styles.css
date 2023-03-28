@@ -10,10 +10,10 @@ h1, h2, h3, h4, h5, h6, p{
 .name{
     text-align: center;
 }
-.popup{
+.popup ul{
     display: none;
 }
-div button{
+.popButton button{
     background-color: rgb(125, 125, 125);
     border: none;
     color: white;
@@ -30,7 +30,4 @@ div button{
 }
 iframe{
     display: none;
-}
-#industryYear:focus{
-    background-color: rgb(0, 0, 0);
 }

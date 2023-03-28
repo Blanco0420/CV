@@ -11,8 +11,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="script.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
         <div class="name">
@@ -20,17 +20,17 @@
         </div>
         <h2>Introduction</h2>
         <p>A motivated, adaptable and responsible technology enthusiast, seeking a first position working as an IT engineer or help-desk position. I have a methodical, customer focused approach and a drive to see things through to completion. I have a passion for computers and I am currently saving towards my first home build. I am a clear communicator, English was one of my strongest subjects in school, I am also fluent in Spanish, having gone to school there before moving to the UK, one day I hope to learn others.</p>
-        <div id="education">
+        <div class="popButton" id="education">
             <!-- TODO popup of modules for college and uni -->
             <h2>Education</h2>
             <h3>2022 - 2026</h3>
             <h5>Canterbury,Kent</h5>
             <ul>
                 <li><b>Canterbury Christ Church University</b></li>
-                <button>Modules</button>
-                <button id="clicMe"><ul>Third year: year in industry</ul></button>
-                <div class="">
-                    <ul>1st year modules:
+                <div class="popup">
+                    <button>Modules</button>
+                    <ul>
+                        <h4>1st year modules:</h4>
                         <li>Introduction to C#</li>
                         <li>Deployment Technologies for Computing</li>
                         <li>Fundamentals of Computer Systems</li>
@@ -38,7 +38,8 @@
                         <li>Ethic, Professionalism and Employability in Computing</li>
                         <li>Software Lifecycle Group Development Project</li>
                     </ul>
-                    <ul>2nd year modules:
+                    <ul>
+                        <h4>2nd year modules:</h4>
                         <li>Using Technology for Business Process Improvement</li>
                         <li>Research Methods</li>
                         <li>Database Enhancement Group Project</li>
@@ -46,10 +47,12 @@
                         <li>Network and Operating Systems</li>
                         <li>E-Business Systems</li>
                     </ul>
-                    <div tabindex="-1" id="industryYear">Industry Placement</div>
-                        
-                    <!-- TODO CLICK TO take to experiences -->
-                    <ul>4th year modules:
+                    <ul>
+                        <h4>Third Year:</h4>
+                        <button onclick="scrollToIndustry()">Year in industry</button>
+                    </ul>
+                    <ul>
+                        <h4>4th year modules:</h4>
                         <li>Individual Study - Part A</li>
                         <li>Advanced Networking</li>
                         <li>Cybersecurity</li>
@@ -64,9 +67,9 @@
             <h5>Dartford, Kent</h5>
             <ul> 
                 <li><b>North Kent College</b></li>
-                <li>Level 3 National Extended Diploma in IT: Merit, Merit, Merit</li>
-                <button>Modules</button>
+                <li>Level 3 National Extended Diploma in IT: Merit, Merit, Merit</li>  
                 <div class="popup">
+                    <button>Modules</button>
                     <ul>Modules:
                         <li>Information Technology Systems</li>
                         <li>Creating Systems to Manage Information</li>
@@ -105,7 +108,7 @@
                 </div>
             </ul>
         </div>
-        <div id="experience">
+        <div class="popButton" id="experience">
             <h2>Work Experience</h2>
             <div class="job">
                 <h3>2022 - Present</h3>
@@ -230,6 +233,7 @@
                 <li>2019 - NCS (National Citizenship Service) - NCS is an experience you can do between the ages of 16-17 and allows you to learn skills for the working world and takes you out of your comfort zone. On the first week you do activities such as canoeing, bushcraft, high ropes, etc. The second week is aimed at working in the real world with workshops such as public speaking, managing money, what it’s like to stay at university dorms, etc. And the last part of the challenge is volunteering with a local partner. For me this was a care home for the elderly for which we hosted a carnival themed party to help them feel less isolated.</li>
                 <li>2017 - Deloitte: Interview workshop - My former school has a partnership with Deloitte meaning that they arrange activity days, one being a workshop preparing us for interviews to come throughout our lives. They taught us about key tips to use when in interviews such as keeping eye contact, Speaking clearly, paying attention to what the interviewer is saying, etc.</li>
                 <li>2016 - Deloitte: Working in the city with Societe Generale - As said above, my previous school has a partnership with Deloitte so another event that I attended was a workshop on what it’s like to work in Central London. This event was hosted by Societe Generale and they took us through talks with people who work at the bank and what its like to work there.</li>
+                <div id="industry">test</div>
             </ul>
         </div>
 
@@ -241,8 +245,6 @@
             
             
         </div>
-
-        
             
     </body>
 </html>
