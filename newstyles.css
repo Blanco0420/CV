@@ -1,0 +1,224 @@
+/* Colour Pallette */
+	
+.second-color { 
+	background: #ffffff; 
+}
+
+.fourth-color { 
+	background: #b7efef;
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  position: relative;
+  height: 100000px;
+}
+
+header {
+  background-color: #373160;
+  text-align: center;
+  color: white;
+  align-items: center;
+}
+header h1{
+  padding-top: 30px;
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+header .container{
+  position: sticky;
+  /* top: 0; */
+  width: 100%;
+  background-color: #373160;
+}
+
+
+
+.section{
+  display: block;
+  width: 100%;
+  padding: 20px;
+  background: #ddf8f7; 
+  margin-bottom: 35px;
+}
+
+#content{
+  padding-top: 70px;
+}
+
+li{
+  list-style: none;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.navbar{
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarOffsetMargin{
+  margin-top: 60px;
+}
+
+#navbar.sticky{
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #373160;
+}
+
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-item{
+  transition: background-color 0.3s ease;
+}
+.nav-link{
+  display: inline-block;
+  padding: 16px 80px 16px 80px;
+  color: white;
+  transition: color 0.3s ease;
+}
+.nav-item:hover{
+  background-color: white;
+}
+.nav-link:hover{
+  color: black;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+  background-color: black;
+}
+
+
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.side h2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Main column */
+.main {
+  padding: 20px; 
+  flex: 70%;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+@media screen and (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 1600px){
+  .container{
+    width: 100%;
+  }
+}
+
+@media(max-width: 900px){
+  .hamburger{
+    padding: 20px;
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: rotate(45deg) translate(5px, 5px);
+    width: 28px;
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: rotate(-45deg) translate(5px, -5px);
+    width: 28px;
+  }
+  .nav-menu{
+    position: absolute;
+    left: -100%;
+    top: 69px;
+    gap: 0px;
+    flex-direction: column;
+    background-color: #453d7bd6;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  .nav-menu.active{
+    left: 0;
+  }
+}
+
+@media
+(prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+  

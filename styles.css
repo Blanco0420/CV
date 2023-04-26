@@ -10,10 +10,7 @@ h1, h2, h3, h4, h5, h6, p{
 .name{
     text-align: center;
 }
-.popup ul{
-    display: none;
-}
-.popButton button{
+button{
     background-color: rgb(125, 125, 125);
     border: none;
     color: white;
@@ -28,6 +25,90 @@ h1, h2, h3, h4, h5, h6, p{
 #education > ul > li{
     list-style-type: none;
 }
-iframe{
-    display: none;
+@keyframes testing {
+    0% {
+        border: 1px solid grey;
+        background-color:rgb(125, 125, 125, 0.1);
+    }
+    15% {
+        border: 2px solid grey;
+        background-color:rgb(125, 125, 125, 0.2);
+    }
+    30% {
+        border: 3px solid grey;
+        background-color:rgb(125, 125, 125, 0.3);
+    }
+    45% {
+        border: 4px solid grey;
+        background-color:rgb(125, 125, 125, 0.4);
+    }
+    60% {
+        border: 3px solid grey;
+        background-color:rgb(125, 125, 125, 0.3);
+    }
+    75% {
+        border: 2px solid grey;
+        background-color:rgb(125, 125, 125, 0.2);
+    }
+    90% {
+        border: 1px solid grey;
+        background-color:rgb(125, 125, 125, 0.1);
+    }
+    100% {
+        border: 0px;
+        background-color:rgb(125, 125, 125, 0);
+    }
+    
+}
+.focusBorder{
+    display: inline-block;
+    animation-name: testing;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+
+    
+}
+
+/* BORDERS AND BULLETS */
+
+h3 {
+    /*CSS reset*/
+    margin-bottom: 0;
+}
+
+ul.experiences li.bullet {
+    list-style: none;
+    position:relative; /* so that pseudoelements are positioned relatively to their "li"s*/
+    /* use padding-bottom instead of margin-bottom.*/ 
+    margin-bottom: 0; /* This overrides previously specified margin-bottom */
+    padding-bottom: 2.5em;
+}
+
+ul.experiences li.bullet:after {
+    /* bullets */
+    content: url('http://upload.wikimedia.org/wikipedia/commons/thumb/3/30/RedDisc.svg/20px-RedDisc.svg.png');
+    position: absolute;
+    left: -26px; /*adjust manually*/
+    top: 0px;
+}
+
+ul.experiences li.bullet:before {
+    /* lines */
+    content:"";
+    position: absolute;
+    left: -16px; /* adjust manually */
+    border-left: 1px solid black;
+    height: 300%;
+    width: 1px;
+}
+
+ul.experiences li.bullet:first-child:before {
+   /* first li's line */
+   top: 6px; /* moves the line down so that it disappears under the bullet. Adjust manually */
+}
+
+ul.experiences li.bullet:last-child:before {
+    /* last li's line */
+   height: -10000px; /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
 }
