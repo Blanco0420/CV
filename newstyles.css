@@ -118,6 +118,52 @@ a{
   color: black;
 }
 
+/* Education styling */
+
+#education button{
+  background-color: #373160;
+  color: white;
+  border: 2px solid #373160;
+  border-radius: 8px;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#education button:hover{
+  background-color: white;
+  color: black;
+}
+
+#education .showModules{
+  display: none;
+}
+
+#education button.active{
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+#education button.active:hover{
+  background-color: #373160;
+  color: white;
+}
+
+
+/* Experience styling */
+
+#experience .job{
+  margin-left: 25px;
+}
+
 
 /* Column container */
 .row {  
@@ -182,13 +228,7 @@ a{
   }
 }
 
-@media(max-width: 1600px){
-  .container{
-    width: 100%;
-  }
-}
-
-@media(max-width: 900px){
+@media(max-width: 1300px){
   .hamburger{
     padding: 20px;
     display: block;
@@ -208,17 +248,25 @@ a{
   .nav-menu{
     position: absolute;
     left: -100%;
-    top: 69px;
+    top: 468px;
     gap: 0px;
     flex-direction: column;
     background-color: #453d7bd6;
     width: 100%;
     text-align: center;
-    transition: 0.5s;
+    transition: 0.4s;
+  }
+
+  .navbar.sticky .nav-menu{
+    top: 69px;
   }
 
   .nav-menu.active{
     left: 0;
+  }
+
+  .leftTransition{
+    transition-property: left;
   }
 }
 
@@ -312,6 +360,4 @@ ul.lines li:last-child:before { height: 15px; }
   animation-duration: 1.5s;
   animation-delay: 1s;
   animation-timing-function: ease-in-out;
-
-  
 }

@@ -6,7 +6,10 @@
 // }
 $(document).ready(function() {
 	$(".popup button").click(function() {
-		$(this).parent().find("div").toggle();
+		if (!$(this).is("#ignore")) {
+			$(this).parent().find("div").slideToggle(500);
+			$(this).parent().find("button").toggleClass("active");
+		}
 	});
 	const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector('.nav-menu');
@@ -37,8 +40,10 @@ $(document).ready(function() {
 		if (scrollPos > navPos) {
 			navbar.classList.add('sticky');
 			content.classList.add('navbarOffsetMargin');
+
 		} else {
 		navbar.classList.remove('sticky');
+		navMenu.classList.add('leftTransition');
 		content.classList.remove('navbarOffsetMargin');
 		}
 	  });

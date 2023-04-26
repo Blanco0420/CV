@@ -60,7 +60,7 @@
                                 <li><b>Canterbury Christ Church University</b></li>
                                 <div class="popup">
                                     <button>Modules</button>
-                                    <div style="display: none;">
+                                    <div class="showModules">
                                         <ul>
                                             <h4>1st year modules:</h4>
                                             <li>Introduction to C#</li>
@@ -81,7 +81,7 @@
                                         </ul>
                                         <ul>
                                             <h4>Third Year:</h4>
-                                            <button onclick="scrollToIndustry()">Year in industry</button>
+                                            <button id="ignore" class="active" onclick="scrollToIndustry()">Year in industry</button>
                                         </ul>
                                         <ul>
                                             <h4>4th year modules:</h4>
@@ -103,7 +103,7 @@
                                 <li>Level 3 National Extended Diploma in IT: Merit, Merit, Merit</li>  
                                 <div class="popup">
                                     <button>Modules</button>
-                                    <div style="display: none;">
+                                    <div class="showModules">
                                         <ul>Modules:
                                             <li>Information Technology Systems</li>
                                             <li>Creating Systems to Manage Information</li>
@@ -130,7 +130,7 @@
                                 <li><b>St Mary Magdalene Academy</b></li>
                                 <div class="popup">
                                     <button>Grades</button>
-                                    <div style="display: none;">
+                                    <div class="showModules">
                                         <ul>
                                             <li>English Language: 5</li></li>
                                             <li>English Literature: 4</li>
@@ -146,18 +146,16 @@
                             </ul>
                         </div>
                         <div id="experience" class="section">
-                            <ul>
-                                <h2>Work Experience</h2>
-                                <div class="job">
-                                    <li><h3>2022 - Present</h3></li>
-                                    <p>Wetherspoons - Kitchen Associate</p>
-                                        <li>Prepping food for the rest of the day</li>
-                                        <li>Cooking food of a wide variety</li>
-                                        <li>Cleaning up the kitchen regularly</li>
-                                        <li>Cleaning all parts of the kitchen when closing</li>
-                                </div>
-                                <div class="job">
-                                    <li><h3>2021- 2022</h3></li>
+                            <h2>Work Experience</h2>
+                            <ul class="lines">
+                                <li class="bullet"><h3>2022 - Present</h3></li>
+                                    <div class="job">Wetherspoons - Kitchen Associate
+                                            <p>Prepping food for the rest of the day
+                                            Cooking food of a wide variety
+                                            Cleaning up the kitchen regularly
+                                            Cleaning all parts of the kitchen when closing</p>
+                                    </div>
+                                <li><h3>2021- 2022</h3></li>
                                     <p>The New Dartford Sports Bar - Bartender</p>
                                     <ul>
                                         <li>Working in a team to serve customers</li> FIXME write better stuff
@@ -165,9 +163,8 @@
                                         <li>Working in a team to clean the toilets</li>
                                         <li>Working in a team to clean the kitchen</li>
                                     </ul>
-                                </div>
+                                <li><h3>2021 - 2021</h3></li>
                                 <div class="job">
-                                    <li><h3>2021 - 2021</h3></li>
                                     <div class="popup">
                                         <button><p>Wig & Gown - Bartender</p></button>
                                         <div style="display: none;">
@@ -181,8 +178,8 @@
                                         </div>
                                     </div>
                                 </div>
+                                <li><h3>2020 - 2021</h3></li>
                                 <div class="job">
-                                    <li><h3>2020 - 2021</h3></li>
                                     <div class="popup">
                                         <button><p>McDonald's - Employee</p></button>
                                         <div style="display: none;">
@@ -207,9 +204,9 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div> 
+                                </div>
+                                <li><h3>2016 - 2020</h3></li>
                                 <div class="job">
-                                    <li><h3>2016 - 2020</h3></li>
                                     <p>Piebury Corner</p>
                                     <div class="popup">
                                         <button><h5>Islington location: Cleaner</h5></button>
