@@ -177,22 +177,30 @@ ul.lines div.job::before{
   top: 0;
   bottom: 0;
   /* overflow: hidden; */
-  border-left: 2px solid #c00;
+  border-left: 3px solid #c00;
   /* height: var(--jobDivHeight) */
 }
 
 ul.lines div.job:last-child::before{
   display: none;
   height: 0px;
-  border: 0px solid #c00;
 }
 
-ul.lines.fixlast li:last-child::before {
-  height: 0px;
+ul.lines li.fixlast::before {
+  height: 14px;
+}
+
+ul.lines.fixpiebury{
+  position: relative;
+  left: 30px;
+}
+
+ul.lines.fixpiebury div.job::before {
+  border-width: 3.5px;
+  left: -26px;
 }
 
 /* TODO target last li in experience */
-
 
 
 /* Column container */
@@ -311,12 +319,12 @@ ul.lines li{
 
 ul.lines > li:before {
   background-color: #c00;
-  width: 2px;
+  width: 3px;
   content: '';
   position: absolute;
   top: 0px;
   bottom: 0px;
-  left: 5px;
+  left: 1.2mm;
 }
 
 /* Small bullets for normal list items */
