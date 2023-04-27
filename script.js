@@ -5,6 +5,12 @@
 //     element.focus();
 // }
 $(document).ready(function() {
+	// fix line height for divs
+	// const root = document.querySelector(':root');
+	// const jobDivHeight = getComputedStyle(document.querySelector("div.job")).height;
+	// root.style.setProperty('--jobDivHeight', jobDivHeight);
+
+
 	$(".popup button").click(function() {
 		if (!$(this).is("#ignore")) {
 			$(this).parent().find("div").slideToggle(500);
