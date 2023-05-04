@@ -4,251 +4,383 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Sacha Terry</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="newstyles.css">
-        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-        <script src="script.js"></script>
-    </head>
-    <body class="fourth-color">
-        <header class="header-img">
-            </div>
-            <div class="header-text">
-                <h1>Sacha Terry</h1>
-            </div>
-          </header>
-          <nav id="navbar" class="navbar">
-            <ul id="nav-menu" class="nav-menu">
-            <li class="nav-item">
-                <a href="#introduction" class="nav-link">Introduction</a>
-            </li>
-            <li class="nav-item">
-                <a href="#education" class="nav-link">Education</a>
-            </li>
-            <li class="nav-item">
-                <a href="#experience" class="nav-link">Work Experience</a>
-            </li>
-            <li class="nav-item">
-                <a href="#achievements" class="nav-link">Achievements</a>
-            </li>
-            </ul>
-            <div id="hamburger" class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-            </div>
-        </nav>
-          <section class="content" id="content">
-                <div class="row">
-                    <div class="main fourth-color">
-                        <div id="introduction" class="section">
-                            <h2>Introduction</h2>
-                            <p>A motivated, adaptable and responsible technology enthusiast, seeking a first position working as an IT engineer or help-desk position. 
-                                I have a methodical, customer focused approach and a drive to see things through to completion. I am a clear communicator, and love to learn about people's lives. I am also fluent in Spanish,
-                                 having gone to school there before moving to the UK, but have also started to learn Japanese too as I wish to live in Japan one day.</p>
-                        </div>
-                        <div id="education" class="section">
-                            <!-- TODO popup of modules for college and uni -->
-                            <h2>Education</h2>
-                            <h3>2022 - 2026</h3>
-                            <h5>Canterbury,Kent</h5>
-                            <ul>
-                                <li><b>Canterbury Christ Church University</b></li>
-                                <div class="popup">
-                                    <button>Modules</button>
-                                    <div class="showModules">
-                                        <ul>
-                                            <h4>1st year modules:</h4>
-                                            <li>Introduction to C#</li>
-                                            <li>Deployment Technologies for Computing</li>
-                                            <li>Fundamentals of Computer Systems</li>
-                                            <li>Application Development in C#</li>
-                                            <li>Ethic, Professionalism and Employability in Computing</li>
-                                            <li>Software Lifecycle Group Development Project</li>
-                                        </ul>
-                                        <ul>
-                                            <h4>2nd year modules:</h4>
-                                            <li>Using Technology for Business Process Improvement</li>
-                                            <li>Research Methods</li>
-                                            <li>Database Enhancement Group Project</li>
-                                            <li>Helping Users and the ITIL Framework</li>
-                                            <li>Network and Operating Systems</li>
-                                            <li>E-Business Systems</li>
-                                        </ul>
-                                        <ul>
-                                            <h4>Third Year:</h4>
-                                            <button id="ignore" class="active" onclick="scrollToIndustry()">Year in industry</button>
-                                        </ul>
-                                        <ul>
-                                            <h4>4th year modules:</h4>
-                                            <li>Individual Study - Part A</li>
-                                            <li>Advanced Networking</li>
-                                            <li>Cybersecurity</li>
-                                            <li>Individual Study - Part B</li>
-                                            <li>Human Computer Interaction</li>
-                                            <li>Current Issues in Computing</li>
-                                            <li>Advanced Databases and Big Data</li>
-                                            </li>
-                                        </ul>
-                                    </div>
-                            </ul>
-                            <h3>2020 - 2022</h3>
-                            <h5>Dartford, Kent</h5>
-                            <ul> 
-                                <li><b>North Kent College</b></li>
-                                <li>Level 3 National Extended Diploma in IT: Merit, Merit, Merit</li>  
-                                <div class="popup">
-                                    <button>Modules</button>
-                                    <div class="showModules">
-                                        <ul>Modules:
-                                            <li>Information Technology Systems</li>
-                                            <li>Creating Systems to Manage Information</li>
-                                            <li>Using Social Media in Business</li>
-                                            <li>Website Development</li>
-                                            <li>Programming</li>
-                                            <li>IT Project Management</li>
-                                            <li>Cyber Security and Incident Management</li>
-                                            <li>IT Service Delivery</li>
-                                            <li>IT Technical Support and Management</li>
-                                            <li>Cloud Storage and Collaboration Tools</li>
-                                            <li>Digital 2D and 3D Graphics</li>
-                                            <li>The Internet of things</li>
-                                            <li>Enterprise in IT</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </ul>
-                            <h3>2015 - 2019</h3>
-                            <h5>Islington, London</h5>
-                            <ul>
-                                <!-- TODO make button to change grades to normal system -->
-                                <h4>gcse grading 9-1 = A* - F</h4>
-                                <li><b>St Mary Magdalene Academy</b></li>
-                                <div class="popup">
-                                    <button>Grades</button>
-                                    <div class="showModules">
-                                        <ul>
-                                            <li>English Language: 5</li></li>
-                                            <li>English Literature: 4</li>
-                                            <li>Maths: 5</li>
-                                            <li>Combined Science: 5-4</li>
-                                            <li>History: 3</li>
-                                            <li>Music: 4</li>
-                                            <li>Computer Science: 5</li>
-                                            <li>Spanish: 9</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </ul>
-                        </div>
-                        <div id="experience" class="section">
-                            <h2>Work Experience</h2>
-                            <ul class="line">
-                                <li><h3>2022 - Present -- Wetherspoons - Kitchen Associate</h3></li>
-                                    <div class="job">
-                                            <ul>
-                                                <li>Prepping food for the rest of the day</li>
-                                                <li> food of a wide variety</li>
-                                                <li> up the kitchen regularly</li>
-                                                <li>Cleaning all parts of the kitchen when closing</li>
-                                            </ul>
-                                    </div>
-                                <li><h3>2021- 2022 -- The New Dartford Sports Bar - Bartender</h3></li>
-                                <div class="job">
-                                    <ul>
-                                        <li>Working in a team to serve customers</li>
-                                        <li>Working in a team to clean the bar</li>
-                                        <li>Working in a team to clean the toilets</li>
-                                        <li>Working in a team to clean the kitchen</li>
-                                    </ul>
-                                </div>
-                                <li><h3>2021 - 2021 -- Wig & Gown - Bartender</h3></li>
-                                <div class="job">
-                                        <ul>
-                                            <li>Pouring pints</li>
-                                            <li>Stocking drinks</li>
-                                            <li>Cleaning glasses & Bar mats</li>
-                                            <li>Glass runs</li>
-                                        </ul>
-                                </div>
-                                <li><h3>2020 - 2021 -- McDonald's - Employee</h3></li>
-                                <div class="job">
-                                    <ul>
-                                        <li>Frequently being given the responsibility
-                                            of running the kitchen which includes:
-                                            Making sure breaks are run in the right
-                                            order, keeping stock levels up to required
-                                            amount, making sure everybody knows what
-                                            station they are working, keeping
-                                            enthusiasm up as this is McDonald's we're
-                                            talking about.</li>
-                                        <li>Working all stations on FOH (Drive-thru,
-                                            payment window, drinks, delivery orders,
-                                            etc).
-                                        </li>
-                                        <li>Working at all stations in the kitchen
-                                            (cooking meat, chicken, racking fries,
-                                            initiating, dressing and
-                                            finishing burgers).
-                                        </li>
-                                    </ul>
-                                </div>
-                                <li class="fixlast"><h3>2016 - 2020 -- Piebury Corner</h3></li>
-                                    <ul class="lines fixpiebury">
-                                        <li><h5>Islington location: Cleaner</h5></li>
-                                        <div class="job">
-                                            <ul>
-                                                <li>Cleaning tables</li>
-                                                <li>Emptying bins</li>
-                                                <li>Helping customers with queries</li>
-                                                <li>Restocking Fridges</li>
-                                            </ul>
-                                        </div>
-                                        <li class="fixlast"><h5>King's cross location: Kitchen Porter</h5></li>
-                                        <div class="job">
-                                            <p>When working in the kitchen, time management is essential. I had to divide my time well between washing up dishes and helping the chef when needed so that customers were not waiting log times for their food.</p>
-                                            <ul>
-                                                <li>Customer Service</li>
-                                                <li>Prepping vegetables for the day</li>
-                                                <li>Defrosting stock required for the day</li>
-                                                <li>Washing up all dishes/cutlery from customers</li>
-                                                <li>Washing kitchen equipment throughout the day</li>
-                                                <li>Keeping the kitchen clean and tidy</li>
-                                                <li>Assisting chef when prepairing plates to be given to customers</li>
-                                            </ul>
-                                        </div>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="achievements" class="section">
-                            <div id="achievements" class="section">
-                                <h2>Achievements</h2>
-                                <ul class="lines">
-                                    <li>2019 - NCS (National Citizenship Service) - NCS is an experience you can do between the ages of 16-17 and allows you to learn skills for the working world and takes you out of your comfort zone. On the first week you do activities such as canoeing, bushcraft, high ropes, etc. The second week is aimed at working in the real world with workshops such as public speaking, managing money, what it’s like to stay at university dorms, etc. And the last part of the challenge is volunteering with a local partner. For me this was a care home for the elderly for which we hosted a carnival themed party to help them feel less isolated.</li>
-                                    <li>2017 - Deloitte: Interview workshop - My former school has a partnership with Deloitte meaning that they arrange activity days, one being a workshop preparing us for interviews to come throughout our lives. They taught us about key tips to use when in interviews such as keeping eye contact, Speaking clearly, paying attention to what the interviewer is saying, etc.</li>
-                                    <li><div id="industry">2024 - Japan: Working in the city with Societe Generale - As said above, my previous school has a partnership with Deloitte so another event that I attended was a workshop on what it’s like to work in Central London. This event was hosted by Societe Generale and they took us through talks with people who work at the bank and what its like to work there.</div></li>
-                                    <li>2016 - Deloitte: Working in the city with Societe Generale - As said above, my previous school has a partnership with Deloitte so another event that I attended was a workshop on what it’s like to work in Central London. This event was hosted by Societe Generale and they took us through talks with people who work at the bank and what its like to work there.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="side">
-                        <h2>About me</h2>
-                        <p></p>
-                        <h2>Skills</h2>
-                    </div>
-                </div>
-            </section>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Sacha Terry</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="newstyles.css" />
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body class="fourth-color">
+		<header class="header-img">
+			<div class="header-text">
+				<h1>Sacha Terry</h1>
+			</div>
+		</header>
+		<nav id="navbar" class="navbar">
+			<ul id="nav-menu" class="nav-menu">
+				<li class="nav-item">
+					<a href="#introduction" class="nav-link">Introduction</a>
+				</li>
+				<li class="nav-item">
+					<a href="#education" class="nav-link">Education</a>
+				</li>
+				<li class="nav-item">
+					<a href="#experience" class="nav-link">Work Experience</a>
+				</li>
+				<li class="nav-item">
+					<a href="#achievements" class="nav-link">Achievements</a>
+				</li>
+			</ul>
+			<div id="hamburger" class="hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+		</nav>
+		<div id="content">
+			<div class="row">
+				<div class="main">
+					<section id="introduction">
+						<h2>Introduction</h2>
+						<p>
+							A motivated, adaptable and responsible technology
+							enthusiast, seeking a first position working as an
+							IT engineer or help-desk position. I have a
+							methodical, customer focused approach and a drive to
+							see things through to completion. I am a clear
+							communicator, and love to learn about people's
+							lives. I am also fluent in Spanish, having gone to
+							school there before moving to the UK, but have also
+							started to learn Japanese too as I wish to live in
+							Japan one day.
+						</p>
+					</section>
+					<section id="education">
+						<!-- TODO popup of modules for college and uni -->
+						<h2>Education</h2>
+						<h3>2022 - 2026</h3>
+						<h5>Canterbury,Kent</h5>
+						<li><b>Canterbury Christ Church University</b></li>
+						<div class="popup">
+							<button>Modules</button>
+							<div class="showModules">
+								<ul>
+									<h4>1st year modules:</h4>
+									<li>Introduction to C#</li>
+									<li>
+										Deployment Technologies for Computing
+									</li>
+									<li>Fundamentals of Computer Systems</li>
+									<li>Application Development in C#</li>
+									<li>
+										Ethic, Professionalism and Employability
+										in Computing
+									</li>
+									<li>
+										Software Lifecycle Group Development
+										Project
+									</li>
+								</ul>
+								<ul>
+									<h4>2nd year modules:</h4>
+									<li>
+										Using Technology for Business Process
+										Improvement
+									</li>
+									<li>Research Methods</li>
+									<li>Database Enhancement Group Project</li>
+									<li>
+										Helping Users and the ITIL Framework
+									</li>
+									<li>Network and Operating Systems</li>
+									<li>E-Business Systems</li>
+								</ul>
+								<ul>
+									<h4>Third Year:</h4>
+									<button
+										id="ignore"
+										class="active"
+										onclick="scrollToIndustry()"
+									>
+										Year in industry
+									</button>
+								</ul>
+								<ul>
+									<h4>4th year modules:</h4>
+									<li>Individual Study - Part A</li>
+									<li>Advanced Networking</li>
+									<li>Cybersecurity</li>
+									<li>Individual Study - Part B</li>
+									<li>Human Computer Interaction</li>
+									<li>Current Issues in Computing</li>
+									<li>Advanced Databases and Big Data</li>
+								</ul>
+							</div>
+						</div>
+						<h3>2020 - 2022</h3>
+						<h5>Dartford, Kent</h5>
+						<li><b>North Kent College</b></li>
+						<li>
+							Level 3 National Extended Diploma in IT: Merit,
+							Merit, Merit
+						</li>
+						<div class="popup">
+							<button>Modules</button>
+							<div class="showModules">
+								<ul>
+									Modules:
+									<li>Information Technology Systems</li>
+									<li>
+										Creating Systems to Manage Information
+									</li>
+									<li>Using Social Media in Business</li>
+									<li>Website Development</li>
+									<li>Programming</li>
+									<li>IT Project Management</li>
+									<li>
+										Cyber Security and Incident Management
+									</li>
+									<li>IT Service Delivery</li>
+									<li>IT Technical Support and Management</li>
+									<li>
+										Cloud Storage and Collaboration Tools
+									</li>
+									<li>Digital 2D and 3D Graphics</li>
+									<li>The Internet of things</li>
+									<li>Enterprise in IT</li>
+								</ul>
+							</div>
+						</div>
+						<h3>2015 - 2019</h3>
+						<h5>Islington, London</h5>
+						<!-- TODO make button to change grades to normal system -->
+						<h4>gcse grading 9-1 = A* - F</h4>
+						<li><b>St Mary Magdalene Academy</b></li>
+						<div class="popup">
+							<button>Grades</button>
+							<div class="showModules">
+								<ul>
+									<li>English Language: 5</li>
+									<li>English Literature: 4</li>
+									<li>Maths: 5</li>
+									<li>Combined Science: 5-4</li>
+									<li>History: 3</li>
+									<li>Music: 4</li>
+									<li>Computer Science: 5</li>
+									<li>Spanish: 9</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section id="experience">
+						<h2>Work Experience</h2>
+						<ul>
+							<li>
+								<h3>
+									2022 - Present -- Wetherspoons - Kitchen
+									Associate
+								</h3>
+							</li>
+							<div class="job">
+								<ul>
+									<li>
+										Prepping food for the rest of the day
+									</li>
+									<li>food of a wide variety</li>
+									<li>up the kitchen regularly</li>
+									<li>
+										Cleaning all parts of the kitchen when
+										closing
+									</li>
+								</ul>
+							</div>
+							<li>
+								<h3>
+									2021- 2022 -- The New Dartford Sports Bar -
+									Bartender
+								</h3>
+							</li>
+							<div class="job">
+								<ul>
+									<li>
+										Working in a team to serve customers
+									</li>
+									<li>Working in a team to clean the bar</li>
+									<li>
+										Working in a team to clean the toilets
+									</li>
+									<li>
+										Working in a team to clean the kitchen
+									</li>
+								</ul>
+							</div>
+							<li>
+								<h3>2021 - 2021 -- Wig & Gown - Bartender</h3>
+							</li>
+							<div class="job">
+								<ul>
+									<li>Pouring pints</li>
+									<li>Stocking drinks</li>
+									<li>Cleaning glasses & Bar mats</li>
+									<li>Glass runs</li>
+								</ul>
+							</div>
+							<li>
+								<h3>2020 - 2021 -- McDonald's - Employee</h3>
+							</li>
+							<div class="job">
+								<ul>
+									<li>
+										Frequently being given the
+										responsibility of running the kitchen
+										which includes: Making sure breaks are
+										run in the right order, keeping stock
+										levels up to required amount, making
+										sure everybody knows what station they
+										are working, keeping enthusiasm up as
+										this is McDonald's we're talking about.
+									</li>
+									<li>
+										Working all stations on FOH (Drive-thru,
+										payment window, drinks, delivery orders,
+										etc).
+									</li>
+									<li>
+										Working at all stations in the kitchen
+										(cooking meat, chicken, racking fries,
+										initiating, dressing and finishing
+										burgers).
+									</li>
+								</ul>
+							</div>
+							<li class="fixlast">
+								<h3>2016 - 2020 -- Piebury Corner</h3>
+							</li>
+							<ul>
+								<li><h5>Islington location: Cleaner</h5></li>
+								<div class="job">
+									<ul>
+										<li>Cleaning tables</li>
+										<li>Emptying bins</li>
+										<li>Helping customers with queries</li>
+										<li>Restocking Fridges</li>
+									</ul>
+								</div>
+								<li>
+									<h5>
+										King's cross location: Kitchen Porter
+									</h5>
+								</li>
+								<div class="job">
+									<p>
+										When working in the kitchen, time
+										management is essential. I had to divide
+										my time well between washing up dishes
+										and helping the chef when needed so that
+										customers were not waiting log times for
+										their food.
+									</p>
+									<ul>
+										<li>Customer Service</li>
+										<li>Prepping vegetables for the day</li>
+										<li>
+											Defrosting stock required for the
+											day
+										</li>
+										<li>
+											Washing up all dishes/cutlery from
+											customers
+										</li>
+										<li>
+											Washing kitchen equipment throughout
+											the day
+										</li>
+										<li>
+											Keeping the kitchen clean and tidy
+										</li>
+										<li>
+											Assisting chef when prepairing
+											plates to be given to customers
+										</li>
+									</ul>
+								</div>
+							</ul>
+						</ul>
+					</section>
+					<section id="achievements">
+						<h2>Achievements</h2>
+						<ul class="lines">
+							<li>
+								2019 - NCS (National Citizenship Service) - NCS
+								is an experience you can do between the ages of
+								16-17 and allows you to learn skills for the
+								working world and takes you out of your comfort
+								zone. On the first week you do activities such
+								as canoeing, bushcraft, high ropes, etc. The
+								second week is aimed at working in the real
+								world with workshops such as public speaking,
+								managing money, what it’s like to stay at
+								university dorms, etc. And the last part of the
+								challenge is volunteering with a local partner.
+								For me this was a care home for the elderly for
+								which we hosted a carnival themed party to help
+								them feel less isolated.
+							</li>
+							<li>
+								2017 - Deloitte: Interview workshop - My former
+								school has a partnership with Deloitte meaning
+								that they arrange activity days, one being a
+								workshop preparing us for interviews to come
+								throughout our lives. They taught us about key
+								tips to use when in interviews such as keeping
+								eye contact, Speaking clearly, paying attention
+								to what the interviewer is saying, etc.
+							</li>
+							<li>
+								<div id="industry">
+									2024 - Japan: Working in the city with
+									Societe Generale - As said above, my
+									previous school has a partnership with
+									Deloitte so another event that I attended
+									was a workshop on what it’s like to work in
+									Central London. This event was hosted by
+									Societe Generale and they took us through
+									talks with people who work at the bank and
+									what its like to work there.
+								</div>
+							</li>
+							<li>
+								2016 - Deloitte: Working in the city with
+								Societe Generale - As said above, my previous
+								school has a partnership with Deloitte so
+								another event that I attended was a workshop on
+								what it’s like to work in Central London. This
+								event was hosted by Societe Generale and they
+								took us through talks with people who work at
+								the bank and what its like to work there.
+							</li>
+						</ul>
+					</section>
+				</div>
+				<div class="side">
+					<h2>About me</h2>
+					<p></p>
+					<h2>Skills</h2>
+				</div>
+			</div>
+		</div>
 
-            <div class="footer">
-                <h2>Footer</h2>
-            </div>
-    </body>
+		<div class="footer">
+			<h2>Footer</h2>
+		</div>
+	</body>
 </html>
